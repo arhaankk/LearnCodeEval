@@ -1,0 +1,75 @@
+20 rows, 0 already done, 20 to run
+  20/20
+
+4/20 succeeded
+category                             n      F1  src_hit   lat_s
+code_explanation                     1   0.505   100.0%    4.84
+code_generation                      2   0.371   100.0%    2.46
+debugging                            1   0.427   100.0%    3.19
+ALL                                  4   0.418   100.0%    3.24
+---------------------------------------------------------------
+7/20 succeeded
+category                             n      F1  src_hit   lat_s
+code_explanation                     1   0.505   100.0%    4.84
+code_generation                      2   0.371   100.0%    2.46
+debugging                            2   0.354    50.0%    4.51
+learncoding_documentation            1   0.330   100.0%    2.01
+output_prediction                    1   0.100     0.0%    2.16
+ALL                                  7   0.341    71.4%    3.28
+---------------------------------------------------------------
+20/20 succeeded
+category                             n      F1  src_hit   lat_s
+ambiguous_multistep                  2   0.318   100.0%    3.91
+code_explanation                     4   0.402   100.0%   45.18
+code_generation                      4   0.281    75.0%    3.11
+debugging                            4   0.449    50.0%   31.82
+learncoding_documentation            3   0.378   100.0%   16.56
+output_prediction                    3   0.179    66.7%   22.74
+ALL                                 20   0.342    80.0%   22.31
+---------------------------------------------------------------
+20/20 succeeded
+
+metric                                           n      mean               95% CI
+efficiency.answer_tokens                        20   148.450   [119.500, 176.650]
+efficiency.attempts                             20     1.550       [1.300, 1.800]
+efficiency.context_tokens                       20     0.000       [0.000, 0.000]
+efficiency.input_tokens                         20    24.750     [21.300, 28.550]
+efficiency.latency_s                            20     2.475       [2.052, 2.977]
+efficiency.latency_total_s                      20    28.254     [17.947, 38.849]
+efficiency.output_tokens                        20   148.450   [119.700, 174.950]
+efficiency.question_tokens                      20    24.750     [21.050, 28.400]
+efficiency.rate_limited                         20     0.500       [0.300, 0.750]
+efficiency.retry_wait_s                         20    25.014     [13.172, 35.657]
+groundedness.context_available                  20     0.000       [0.000, 0.000]
+lens.prog_lang_conflict                         13     0.000       [0.000, 0.000]
+lens.prog_lang_match                            13     1.000       [1.000, 1.000]
+lexical.answer_words                            20    97.350    [80.500, 115.450]
+lexical.exact_match                             20     0.000       [0.000, 0.000]
+lexical.f1                                      20     0.333       [0.268, 0.393]
+lexical.length_ratio                            20     5.890       [2.944, 9.687]
+lexical.precision                               20     0.236       [0.190, 0.283]
+lexical.recall                                  20     0.748       [0.652, 0.826]
+lexical.reference_words                         20    32.750     [24.400, 41.100]
+lexical.rouge_l                                 20     0.262       [0.209, 0.310]
+retrieval.first_correct_rank                    16     2.188       [1.688, 2.750]
+retrieval.hit_any                               20     0.800       [0.600, 0.950]
+retrieval.hit_at_1                              20     0.300       [0.100, 0.500]
+retrieval.hit_at_3                              20     0.650       [0.450, 0.850]
+retrieval.hit_at_5                              20     0.800       [0.600, 0.950]
+retrieval.mean_score                            20     0.640       [0.620, 0.657]
+retrieval.mrr                                   20     0.487       [0.321, 0.658]
+retrieval.n_relevant_retrieved                  20     1.050       [0.750, 1.350]
+retrieval.n_retrieved                           20     5.000       [5.000, 5.000]
+retrieval.precision_at_1                        20     0.300       [0.100, 0.500]
+retrieval.precision_at_3                        20     0.217       [0.150, 0.283]
+retrieval.precision_at_5                        20     0.210       [0.150, 0.270]
+retrieval.top_score                             20     0.649       [0.627, 0.669]
+
+Per category (means)
+category                        n          f1     rouge_l    hit_at_5         mrr   latency_s
+ambiguous_multistep             2       0.314       0.198       1.000       0.375       1.829
+code_explanation                4       0.408       0.319       1.000       0.479       2.876
+code_generation                 4       0.281       0.196       0.750       0.500       2.147
+debugging                       4       0.420       0.356       0.500       0.500       2.435
+learncoding_documentation       3       0.379       0.329       1.000       0.528       3.098
+output_prediction               3       0.150       0.125       0.667       0.500       2.239
